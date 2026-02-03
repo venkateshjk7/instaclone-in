@@ -10,7 +10,7 @@ function Stories() {
   let tot = 0;
 
   useEffect(()=>{
-    fetch('http://localhost:3000/story')
+    fetch('https://json-db-pey8.onrender.com/story')
     .then(data => data.json())
     .then(data => setStories(data))
     .catch(err => console.log(err))
@@ -39,5 +39,6 @@ function Stories() {
     </div>
   )
 }
+
 
 export default Stories
