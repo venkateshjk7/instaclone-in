@@ -7,12 +7,12 @@ function Suggestions() {
   const [suggestions,setSuggestions] = useState([]);
 
   useEffect(()=>{
-    fetch("http://localhost:3000/profile")
+    fetch("https://json-db-pey8.onrender.com/profile")
     .then(data=> data.json())
     .then(data=> setProfile(data))
     .catch(err=> console.log(err))
     
-    fetch("http://localhost:3000/suggestions")
+    fetch("https://json-db-pey8.onrender.com/suggestions")
     .then(data=> data.json())
     .then(data=> setSuggestions(data))
     .catch(err=> console.log(err))
@@ -20,7 +20,7 @@ function Suggestions() {
   },[]);
 
   const handleFollow = async(id, username)=>{
-    axios.post('http://localhost:3000/followers',{"id":id, "username": username})
+    axios.post('https://json-db-pey8.onrender.com/followers',{"id":id, "username": username})
     .then(alert('followed'))
     .catch(err => console.log(err))
   }
@@ -63,5 +63,6 @@ function Suggestions() {
     </div>
   )
 }
+
 
 export default Suggestions
