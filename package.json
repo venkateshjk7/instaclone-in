@@ -9,6 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "node index.js",
+    "json-server": "json-server --watch db.json --port 3000",
+    "dev:all": "concurrently \"npm run json-server\" \"npm run dev\" --names \"server,client\" --kill-others",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,6 +35,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.3",
+    "concurrently": "^9.2.1",
     "vite": "^7.3.1"
   }
 }
