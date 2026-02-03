@@ -5,9 +5,9 @@
       "user": {
         "id": 201,
         "username": "john_travels",
-        "profile_pic": "instaclone-in/src/assets/profiledp1.jpg"
+        "profile_pic": "instaclone-in/public/assets/profiledp1.jpg"
       },
-      "image": "instaclone-in/src/assets/mountaintrip.jpg",
+      "image": "instaclone-in/public/assets/mountaintrip.jpg",
       "caption": "Exploring the mountains 🏔",
       "likes": 340,
       "comments": [
@@ -27,9 +27,9 @@
       "user": {
         "id": 202,
         "username": "jane_doe",
-        "profile_pic": "instaclone-in/src/assets/profiledp2.jpg"
+        "profile_pic": "instaclone-in/public/assets/profiledp2.jpg"
       },
-      "image": "instaclone-in/src/assets/beachsunset.jpg",
+      "image": "instaclone-in/public/assets/beachsunset.jpg",
       "caption": "Relaxing sunset on the beach 🌅",
       "likes": 250,
       "comments": [
@@ -49,9 +49,9 @@
       "user": {
         "id": 203,
         "username": "foodie_raj",
-        "profile_pic": "instaclone-in/src/assets/profiledp4.jpg"
+        "profile_pic": "instaclone-in/public/assets/profiledp4.jpg"
       },
-      "image": "instaclone-in/src/assets/pizza.jpg",
+      "image": "instaclone-in/public/assets/pizza.jpg",
       "caption": "Cheesy pizza night 🍕❤",
       "likes": 180,
       "comments": [
@@ -71,9 +71,9 @@
       "user": {
         "id": 204,
         "username": "airlovers",
-        "profile_pic": "instaclone-in/src/assets/profiledp3.jpg"
+        "profile_pic": "instaclone-in/public/assets/profiledp3.jpg"
       },
-      "image": "instaclone-in/src/assets/airways.jpg",
+      "image": "instaclone-in/public/assets/airways.jpg",
       "caption": "Exploring the countries🏔",
       "likes": 410,
       "comments": [
@@ -92,28 +92,28 @@
   "profile": {
     "id": 101,
     "username": "jane_doe",
-    "profile_pic": "instaclone-in/src/assets/profiledp2.jpg"
+    "profile_pic": "instaclone-in/public/assets/profiledp2.jpg"
   },
   "suggestions": [
     {
       "id": "201",
       "username": "john_travels",
-      "profile_pic": "instaclone-in/src/assets/profiledp1.jpg"
+      "profile_pic": "instaclone-in/public/assets/profiledp1.jpg"
     },
     {
       "id": "202",
       "username": "jane_doe",
-      "profile_pic": "instaclone-in/src/assets/profiledp2.jpg"
+      "profile_pic": "instaclone-in/public/assets/profiledp2.jpg"
     },
     {
       "id": "203",
       "username": "foodie_raj",
-      "profile_pic": "instaclone-in/src/assets/profiledp4.jpg"
+      "profile_pic": "instaclone-in/public/assets/profiledp4.jpg"
     },
     {
       "id": "204",
       "username": "airlovers",
-      "profile_pic": "instaclone-in/src/assets/profiledp3.jpg"
+      "profile_pic": "instaclone-in/public/assets/profiledp3.jpg"
     }
   ],
   "story": [
@@ -122,58 +122,58 @@
       "user": {
         "id": 201,
         "username": "john_travels",
-        "profile_pic": "instaclone-in/src/assets/profiledp1.jpg"
+        "profile_pic": "instaclone-in/public/assets/profiledp1.jpg"
       },
-      "image": "instaclone-in/src/assets/s1.jpg"
+      "image": "instaclone-in/public/assets/s1.jpg"
     },
     {
       "id": "2",
       "user": {
         "id": 202,
         "username": "jane_doe",
-        "profile_pic": "instaclone-in/src/assets/profiledp2.jpg"
+        "profile_pic": "instaclone-in/public/assets/profiledp2.jpg"
       },
-      "image": "instaclone-in/src/assets/s2.jpg"
+      "image": "instaclone-in/public/assets/s2.jpg"
     },
     {
       "id": "3",
       "user": {
         "id": 203,
         "username": "foodie_raj",
-        "profile_pic": "instaclone-in/src/assets/profiledp4.jpg"
+        "profile_pic": "instaclone-in/public/assets/profiledp4.jpg"
       },
-      "image": "instaclone-in/src/assets/s3.jpg"
+      "image": "instaclone-in/public/assets/s3.jpg"
     },
     {
       "id": "4",
       "user": {
         "id": 204,
         "username": "airlovers",
-        "profile_pic": "instaclone-in/src/assets/profiledp3.jpg"
+        "profile_pic": "instaclone-in/public/assets/profiledp3.jpg"
       },
-      "image": "instaclone-in/src/assets/s4.jpg"
+      "image": "instaclone-in/public/assets/s4.jpg"
     }
   ],
   "followers": [
     {
       "id": "1",
       "username": "john_travels",
-      "profile_pic": "instaclone-in/src/assets/profiledp1.jpg"
+      "profile_pic": "instaclone-in/public/assets/profiledp1.jpg"
     },
     {
       "id": "2",
       "username": "jane_doe",
-      "profile_pic": "instaclone-in/src/assets/profiledp2.jpg"
+      "profile_pic": "instaclone-in/public/assets/profiledp2.jpg"
     },
     {
       "id": "3",
       "username": "foodie_raj",
-      "profile_pic": "instaclone-in/src/assets/profiledp4.jpg"
+      "profile_pic": "instaclone-in/public/assets/profiledp4.jpg"
     },
     {
       "id": "4",
       "username": "airlovers",
-      "profile_pic": "instaclone-in/src/assets/profiledp3.jpg"
+      "profile_pic": "instaclone-in/public/assets/profiledp3.jpg"
     },
     {
       "id": "201",
