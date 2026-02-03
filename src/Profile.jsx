@@ -12,11 +12,11 @@ function Profile() {
     const [unfollowed, setUnfollowed] = useState(0);
 
     useEffect( ()=> {
-        axios.get('http://localhost:3000/profile')
+        axios.get('https://json-db-pey8.onrender.com/profile')
         .then(data => {setProfile(data.data); console.log(data)})
         .catch(err => console.log(err))
 
-        axios.get('http://localhost:3000/followers')
+        axios.get('https://json-db-pey8.onrender.com/followers')
         .then(data => {setFollowers(data.data); console.log(data)})
         .catch(err => console.log(err))
 
@@ -30,13 +30,13 @@ function Profile() {
     }
 
     const handleUpdate = async()=>{
-        axios.put('http://localhost:3000/profile',profile)
+        axios.put('https://json-db-pey8.onrender.com/profile',profile)
         .then(console.log("Updated"))
         .catch(err => console.log(err))
     }
 
     const handleUnFollow = async(id)=>{
-        axios.delete(`http://localhost:3000/followers/${id}`)
+        axios.delete(`https://json-db-pey8.onrender.com/followers/${id}`)
         .then(alert("unfollowed"))
         .then(setUnfollowed(!unfollowed))
         .catch(err => console.log(err))
@@ -84,5 +84,6 @@ function Profile() {
     </div>
   )
 }
+
 
 export default Profile
