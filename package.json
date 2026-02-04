@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "node index.js",
+    "start": "json-server --watch db.json --port $PORT",
     "json-server": "json-server --watch db.json --port 3000",
     "dev:all": "concurrently \"npm run json-server\" \"npm run dev\" --names \"server,client\" --kill-others",
     "test": "echo \"Error: no test specified\" && exit 1"
