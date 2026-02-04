@@ -1,0 +1,89 @@
+import React from 'react'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+
+
+function Profile() {
+
+    const [profile, setProfile] = useState(null);
+
+    const [followers, setFollowers] = useState([]);
+
+    const [unfollowed, setUnfollowed] = useState(0);
+
+    useEffect( ()=> {
+        axios.get('https://json-db-pey8.onrender.com/profile')
+        .then(data => {setProfile(data.data); console.log(data)})
+        .catch(err => console.log(err))
+
+        axios.get('https://json-db-pey8.onrender.com/followers')
+        .then(data => {setFollowers(data.data); console.log(data)})
+        .catch(err => console.log(err))
+
+    },[unfollowed])
+
+    function HandleonChange(e){
+        setProfile(prev =>({
+            ...prev,
+            [e.target.name] : e.target.value
+        }))
+    }
+
+    const handleUpdate = async()=>{
+        axios.put('https://json-db-pey8.onrender.com/profile',profile)
+        .then(console.log("Updated"))
+        .catch(err => console.log(err))
+    }
+
+    const handleUnFollow = async(id)=>{
+        axios.delete(`https://json-db-pey8.onrender.com/followers/${id}`)
+        .then(alert("unfollowed"))
+        .then(setUnfollowed(!unfollowed))
+        .catch(err => console.log(err))
+    }
+
+  return (
+    <div className="m-5">
+        {profile ? (
+            <div>
+                <img src={profile.profile_pic} className="profile rounded-circle"/>
+                <h5>{profile.username}</h5>
+
+                <input type="text" 
+                        value={profile.username}
+                        name="username"
+                        className="form-control my-4"
+                        onChange={HandleonChange}
+                />
+
+                <input type="text" 
+                        name="profile_pic"
+                        value={profile.profile_pic}
+                        className="form-control"
+                        onChange={HandleonChange}
+                />
+
+                <button className="btn btn-primary my-4" onClick={handleUpdate}>
+                    Update
+                </button>
+            </div>
+        ):(
+            <div>Loading Profile</div>
+        )}
+
+        {followers.length >0 ? (
+            followers.map(follower => {
+                <div key={follower.id} className="d-flex my-2">
+                    {follower.username}
+                    <button className="btn btn-secondary ms-auto" onClick={() => handleUnFollow(follower.id)}>un Follow</button>
+                </div>
+            })
+        ):(
+            <div>Loading Followers</div>
+        )}
+    </div>
+  )
+}
+
+
+export default Profile
